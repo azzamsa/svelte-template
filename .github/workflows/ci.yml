@@ -1,0 +1,29 @@
+name: ci
+
+on:
+  pull_request: null
+  push:
+    branches:
+      - master
+
+jobs:
+  ci:
+    runs-on: ubuntu-18.04
+    steps:
+
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 6.21.0
+
+      - name: Install dependencies
+        run: |
+          pnpm i
+
+      - name: Lint
+        run: |
+          make is_verified
