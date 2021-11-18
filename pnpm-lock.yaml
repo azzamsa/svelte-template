@@ -5,6 +5,7 @@ specifiers:
   '@rollup/plugin-node-resolve': ^11.0.0
   '@rollup/plugin-typescript': ^8.0.0
   '@tsconfig/svelte': ^2.0.0
+  prettier: ^2.4.1
   rollup: ^2.3.4
   rollup-plugin-css-only: ^3.1.0
   rollup-plugin-livereload: ^2.0.0
@@ -25,6 +26,7 @@ devDependencies:
   '@rollup/plugin-node-resolve': 11.2.1_rollup@2.60.0
   '@rollup/plugin-typescript': 8.3.0_8237b289b1560ac087923ea403810077
   '@tsconfig/svelte': 2.0.1
+  prettier: 2.4.1
   rollup: 2.60.0
   rollup-plugin-css-only: 3.1.0_rollup@2.60.0
   rollup-plugin-livereload: 2.0.5
@@ -619,6 +621,12 @@ packages:
   /picomatch/2.3.0:
     resolution: {integrity: sha512-lY1Q/PiJGC2zOv/z391WOTD+Z02bCgsFfvxoXXf6h7kv9o+WmsmzYqrAwY63sNgOxE4xEdq0WyUnXfKeBrSvYw==}
     engines: {node: '>=8.6'}
+    dev: true
+
+  /prettier/2.4.1:
+    resolution: {integrity: sha512-9fbDAXSBcc6Bs1mZrDYb3XKzDLm4EXXL9sC1LqKP5rZkT6KRr/rf9amVUcODVXgguK/isJz0d0hP72WeaKWsvA==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
     dev: true
 
   /queue-microtask/1.2.3:
